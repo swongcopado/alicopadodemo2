@@ -12,11 +12,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Date__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Additional_Data__c</field>
+                <field>DeploymentTestingField__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
