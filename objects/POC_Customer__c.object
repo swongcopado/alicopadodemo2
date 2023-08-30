@@ -357,6 +357,7 @@
         <trackHistory>true</trackHistory>
         <type>Text</type>
     </nameField>
+    <pluralLabel>POC - Customers</pluralLabel>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <recordTypes>

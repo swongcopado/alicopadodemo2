@@ -305,6 +305,7 @@
         <trackHistory>true</trackHistory>
         <type>Text</type>
     </nameField>
+    <pluralLabel>POC - Orders</pluralLabel>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
