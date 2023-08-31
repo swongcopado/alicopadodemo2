@@ -4,7 +4,7 @@
         <fullName>LeadtoSales</fullName>
         <active>true</active>
         <ruleEntry>
-            <assignedTo>c.qiu@accenture.com.alisfdcdemo</assignedTo>
+            <assignedTo>{!Environment.EmailAddressForAliOrg}</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Lead.LeadSource</field>

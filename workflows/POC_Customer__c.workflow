@@ -15,7 +15,7 @@
         <description>New Customer Awaiting Review</description>
         <protected>false</protected>
         <recipients>
-            <recipient>c.qiu@accenture.com.alisfdcdemo</recipient>
+            <recipient>{!Environment.EmailAddressForAliOrg}</recipient>
             <type>user</type>
         </recipients>
         <senderType>CurrentUser</senderType>
@@ -75,7 +75,7 @@
     </rules>
     <tasks>
         <fullName>Review_New_Customer</fullName>
-        <assignedTo>c.qiu@accenture.com.alisfdcdemo</assignedTo>
+        <assignedTo>{!Environment.EmailAddressForAliOrg}</assignedTo>
         <assignedToType>user</assignedToType>
         <dueDateOffset>10</dueDateOffset>
         <notifyAssignee>false</notifyAssignee>
