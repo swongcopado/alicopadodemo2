@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Market_Segment__c</fullName>
+        <externalId>false</externalId>
+        <label>Market Segment</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Mechanical Components</fullName>
+                    <default>false</default>
+                    <label>Mechanical Components</label>
+                </value>
+                <value>
+                    <fullName>Metal &amp; Tool &amp; Die</fullName>
+                    <default>false</default>
+                    <label>Metal &amp; Tool &amp; Die</label>
+                </value>
+                <value>
+                    <fullName>NEV (SBDP)</fullName>
+                    <default>false</default>
+                    <label>NEV (SBDP)</label>
+                </value>
+                <value>
+                    <fullName>Electronics</fullName>
+                    <default>false</default>
+                    <label>Electronics</label>
+                </value>
+                <value>
+                    <fullName>Automotive</fullName>
+                    <default>false</default>
+                    <label>Automotive</label>
+                </value>
+                <value>
+                    <fullName>Medical (SBDP)</fullName>
+                    <default>false</default>
+                    <label>Medical (SBDP)</label>
+                </value>
+                <value>
+                    <fullName>Science &amp; Services</fullName>
+                    <default>false</default>
+                    <label>Science &amp; Services</label>
+                </value>
+                <value>
+                    <fullName>Carbody</fullName>
+                    <default>false</default>
+                    <label>Carbody</label>
+                </value>
+                <value>
+                    <fullName>Other Manufacturing</fullName>
+                    <default>false</default>
+                    <label>Other Manufacturing</label>
+                </value>
+                <value>
+                    <fullName>Energy</fullName>
+                    <default>false</default>
+                    <label>Energy</label>
+                </value>
+                <value>
+                    <fullName>Plastics/Rubber</fullName>
+                    <default>false</default>
+                    <label>Plastics/Rubber</label>
+                </value>
+                <value>
+                    <fullName>Aerospace (SBDP)</fullName>
+                    <default>false</default>
+                    <label>Aerospace (SBDP)</label>
+                </value>
+                <value>
+                    <fullName>Transportation</fullName>
+                    <default>false</default>
+                    <label>Transportation</label>
+                </value>
+                <value>
+                    <fullName>Agriculture, Construction, Mining</fullName>
+                    <default>false</default>
+                    <label>Agriculture, Construction, Mining</label>
+                </value>
+                <value>
+                    <fullName>Engines (non-automotive)</fullName>
+                    <default>false</default>
+                    <label>Engines (non-automotive)</label>
+                </value>
+                <value>
+                    <fullName>Defense Industry</fullName>
+                    <default>false</default>
+                    <label>Defense Industry</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>West</fullName>
+                    <default>false</default>
+                    <label>West</label>
+                </value>
+                <value>
+                    <fullName>South</fullName>
+                    <default>false</default>
+                    <label>South</label>
+                </value>
+                <value>
+                    <fullName>Northeast</fullName>
+                    <default>false</default>
+                    <label>Northeast</label>
+                </value>
+                <value>
+                    <fullName>North</fullName>
+                    <default>false</default>
+                    <label>North</label>
+                </value>
+                <value>
+                    <fullName>Middle</fullName>
+                    <default>false</default>
+                    <label>Middle</label>
+                </value>
+                <value>
+                    <fullName>East</fullName>
+                    <default>false</default>
+                    <label>East</label>
+                </value>
+                <value>
+                    <fullName>Shanghai</fullName>
+                    <default>false</default>
+                    <label>Shanghai</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>
