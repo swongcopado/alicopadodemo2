@@ -143,7 +143,6 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Description added</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -155,31 +154,19 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>Additional_Data__c</fullName>
+        <fullName>DeploymentTestingField__c</fullName>
+        <defaultValue>false</defaultValue>
         <externalId>false</externalId>
-        <label>Additional Data</label>
-        <length>50</length>
-        <required>false</required>
+        <label>DeploymentTestingField</label>
         <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
+        <type>Checkbox</type>
     </fields>
-    <fields>
-        <fullName>Date__c</fullName>
-        <defaultValue>Today()</defaultValue>
-        <description>Description added</description>
-        <externalId>false</externalId>
-        <label>Date</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <label>OFWTest3</label>
+    <label>DeploymentTesting</label>
     <nameField>
-        <label>OFWTest3 Name</label>
+        <label>Deployment  Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>OFWTest3s</pluralLabel>
+    <pluralLabel>DeploymentTesting</pluralLabel>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
