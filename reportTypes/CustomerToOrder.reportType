@@ -3,12 +3,12 @@
     <baseObject>POC_Customer__c</baseObject>
     <category>other</category>
     <deployed>true</deployed>
-    <description>CustomerToOrder</description>
+    <description>test</description>
     <join>
         <outerJoin>false</outerJoin>
         <relationship>POC_Orders__r</relationship>
     </join>
-    <label>CustomerToOrder</label>
+    <label>CustomerToOrderer</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
@@ -23,6 +23,11 @@
         <columns>
             <checkedByDefault>true</checkedByDefault>
             <field>Name</field>
+            <table>POC_Customer__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>RecordType</field>
             <table>POC_Customer__c</table>
         </columns>
         <columns>
@@ -52,6 +57,26 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>Country_Code__c</field>
+            <table>POC_Customer__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Customer_Type__c</field>
+            <table>POC_Customer__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Email__c</field>
+            <table>POC_Customer__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>External_ID__c</field>
+            <table>POC_Customer__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>First_Name__c</field>
             <table>POC_Customer__c</table>
         </columns>
@@ -67,32 +92,12 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Email__c</field>
-            <table>POC_Customer__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Customer_Type__c</field>
-            <table>POC_Customer__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>External_ID__c</field>
-            <table>POC_Customer__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Country_Code__c</field>
+            <field>Reviewed__c</field>
             <table>POC_Customer__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>approval_status__c</field>
-            <table>POC_Customer__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Reviewed__c</field>
             <table>POC_Customer__c</table>
         </columns>
         <masterLabel>POC - Customers</masterLabel>
@@ -140,7 +145,12 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>NewTaskId__c</field>
+            <field>Amount__c</field>
+            <table>POC_Customer__c.POC_Orders__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Billing_Address__c</field>
             <table>POC_Customer__c.POC_Orders__r</table>
         </columns>
         <columns>
@@ -155,17 +165,17 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Billing_Address__c</field>
-            <table>POC_Customer__c.POC_Orders__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Amount__c</field>
-            <table>POC_Customer__c.POC_Orders__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>Country_Code__c</field>
+            <table>POC_Customer__c.POC_Orders__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Customer_Name__c</field>
+            <table>POC_Customer__c.POC_Orders__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>NewTaskId__c</field>
             <table>POC_Customer__c.POC_Orders__r</table>
         </columns>
         <columns>
@@ -176,11 +186,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Status__c</field>
-            <table>POC_Customer__c.POC_Orders__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Customer_Name__c</field>
             <table>POC_Customer__c.POC_Orders__r</table>
         </columns>
         <masterLabel>POC - Orders</masterLabel>
