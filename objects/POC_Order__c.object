@@ -143,43 +143,161 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>Description added</description>
-    <enableActivities>false</enableActivities>
+    <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
-    <enableReports>false</enableReports>
-    <enableSearch>false</enableSearch>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>Additional_Data__c</fullName>
+        <fullName>Amount__c</fullName>
         <externalId>false</externalId>
-        <label>Additional Data</label>
-        <length>50</length>
+        <label>Amount</label>
+        <precision>18</precision>
         <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Billing_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Billing Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Date__c</fullName>
-        <defaultValue>Today()</defaultValue>
-        <description>Description added</description>
+        <fullName>Contact_Email__c</fullName>
         <externalId>false</externalId>
-        <label>Date</label>
+        <label>Contact - Email</label>
         <required>false</required>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Date</type>
+        <type>Email</type>
+        <unique>false</unique>
     </fields>
-    <label>OFWTest3</label>
+    <fields>
+        <fullName>Contact_Mobile__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact - Mobile</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Country_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Country Code</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_ID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Customer ID</label>
+        <referenceTo>POC_Customer__c</referenceTo>
+        <relationshipLabel>POC - Orders</relationshipLabel>
+        <relationshipName>POC_Orders</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NewTaskId__c</fullName>
+        <externalId>false</externalId>
+        <label>NewTaskId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Shipping_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Shipping Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>待发货</fullName>
+                    <default>false</default>
+                    <label>待发货</label>
+                </value>
+                <value>
+                    <fullName>已发货</fullName>
+                    <default>false</default>
+                    <label>已发货</label>
+                </value>
+                <value>
+                    <fullName>已签收</fullName>
+                    <default>false</default>
+                    <label>已签收</label>
+                </value>
+                <value>
+                    <fullName>售后中</fullName>
+                    <default>false</default>
+                    <label>售后中</label>
+                </value>
+                <value>
+                    <fullName>已退货/退款</fullName>
+                    <default>false</default>
+                    <label>已退货/退款</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>POC - Order</label>
     <nameField>
-        <label>OFWTest3 Name</label>
+        <label>Order ID</label>
+        <trackHistory>true</trackHistory>
         <type>Text</type>
     </nameField>
-    <pluralLabel>OFWTest3s</pluralLabel>
+    <pluralLabel>POC - Orders</pluralLabel>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
